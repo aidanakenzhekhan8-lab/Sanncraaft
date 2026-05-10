@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUN CRAFT CLAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="burger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <nav id="sidebar">
+        <a href="#" onclick="showPage('home')">Басты бет</a>
+        <a href="#" onclick="showPage('links')">Сілтемелер</a>
+        <a href="#" onclick="showPage('rules')">Ережелер</a>
+        <a href="#" onclick="showPage('poll')">Опрос</a>
+    </nav>
+
+    <section id="home" class="page active">
+        <div class="content">
+            <h1 class="soft-neon">САН КРАФТ КЛАНЫ</h1>
+            <p class="fade-text">КЛАНҒА ҚОШ КЕЛДІҢІЗ</p>
+        </div>
+    </section>
+
+    <section id="links" class="page">
+        <div class="content">
+            <h2 class="soft-neon">СІЛТЕМЕЛЕР</h2>
+            <div class="glass-card">
+                <p>👑 Админ: <a href="https://t.me/Alikoshkzminecraft" target="_blank">@Alikoshkzminecraft</a></p>
+                <p>📢 ТГ Канал: <a href="https://t.me/Sancraft11" target="_blank">t.me/Sancraft11</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rules" class="page">
+        <div class="content">
+            <h2 class="soft-neon">ЕРЕЖЕЛЕР</h2>
+            <div class="glass-card rules">
+                <p><span>1.</span> Админдерге қарсы шықпау</p>
+                <p><span>2.</span> Кемсітуге болмайды</p>
+                <p><span>3.</span> Екі кланда жүруге болмайды</p>
+                <p><span>4.</span> Боқтасып ұрсысуға болмайды</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="poll" class="page">
+        <div class="content">
+            <h2 class="soft-neon">ОПРОС</h2>
+            <div class="glass-card">
+                <p>Не үшін Сан Крафтқа кіргің келеді?</p>
+                <label class="opt"><input type="radio" name="c"> 1. Қызық үшін</label>
+                <label class="opt"><input type="radio" name="c"> 2. Даму үшін</label>
+                <label class="opt"><input type="radio" name="c"> 3. Командалас болу үшін</label>
+                <label class="opt"><input type="radio" name="c"> 4. Т.б</label>
+                <label class="opt"><input type="radio" name="c"> 5. Бәрі</label>
+                <button class="vote-btn" onclick="alert('Рахмет!')">Жіберу</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
